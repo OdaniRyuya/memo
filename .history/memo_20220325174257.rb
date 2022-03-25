@@ -40,4 +40,4 @@ elsif memo_type == "2"
  end
 
  end
-
+end

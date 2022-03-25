@@ -25,19 +25,29 @@ end
 puts "メモしたい内容を入力してください"
 puts "完了したらCtrl + D を押します"
 
-file_text = STDIN.read
+file_text = ""
+
+while test
+  
+end file_text == "" do
+file_text = gets.to_s
 
 if memo_type == "1"
  CSV.open(file_name + '.csv','w')do |csv|
  csv << [file_text]
-  puts "作成しました"
  end
 
 elsif memo_type == "2"
  CSV.open(file_name + '.csv','a+')do |csv|
  csv << [file_text]
-  puts "追加しました"
  end
+ end
+end
 
+
+if memo_type == "1"
+ puts "作成しました"
+ elsif memo_type == "2"
+ puts "追加しました"
  end
 
