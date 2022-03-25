@@ -25,6 +25,9 @@ end
 puts "メモしたい内容を入力してください"
 puts "完了したらCtrl + D を押します"
 
+file_text = ""
+
+while memo_type == "1" do
 file_text = STDIN.read
 
 if memo_type == "1"
@@ -38,6 +41,14 @@ elsif memo_type == "2"
  csv << [file_text]
   puts "追加しました"
  end
+ 
+ end
+end
+
+
+if memo_type == "1"
+
+ elsif memo_type == "2"
 
  end
 
